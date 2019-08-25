@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Authenticated Page</title>
+</head>
+<body>
+<h1>Authenticated Page</h1>
+Dear <strong><span th:text="${#authentication.name}"></span></strong>, welcome to authenticated page.
+<br/>
+<a href="/logout">Logout</a>
+</body>
+</html>
