@@ -1,0 +1,9 @@
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          facebook:
+            client-id: <TODO:client-id>
+            client-secret: <TODO:client-secret>
+            scope: user_posts

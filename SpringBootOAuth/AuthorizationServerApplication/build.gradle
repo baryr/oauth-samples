@@ -1,0 +1,29 @@
+plugins {
+	id 'org.springframework.boot' version '2.1.7.RELEASE'
+	id 'io.spring.dependency-management' version '1.0.8.RELEASE'
+	id 'java'
+}
+
+group = 'com.okta.spring'
+version = '0.0.1-SNAPSHOT'
+
+sourceCompatibility = 11
+targetCompatibility = 11
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.springframework.boot:spring-boot-starter-security'
+	implementation 'org.springframework.boot:spring-boot-starter-actuator'
+	implementation 'org.springframework.security.oauth:spring-security-oauth2:2.3.3.RELEASE'
+
+	// Java 11
+	implementation 'javax.xml.bind:jaxb-api'
+	implementation 'com.sun.xml.bind:jaxb-core:2.3.0'
+	implementation 'com.sun.xml.bind:jaxb-impl:2.3.0'
+
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
